@@ -6,7 +6,8 @@ const app = express();
 const serverless = require("serverless-http");
 
 const router = express.Router();
-
+console.log("process.env.STRIPE_KEY")
+console.log(process.env.STRIPE_KEY)
 app.use(express.json());
 app.use(cors());
 
